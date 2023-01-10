@@ -1,0 +1,51 @@
+body{
+    
+}
+
+#banner{
+    width: 100%;
+}
+
+.eslogan{
+    background: #f0efecef;
+}
+
+h3{
+    text-align: center;
+}
+
+.principal{
+    background: #CCCCCC;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 5%;
+}
+
+
+.imagenDiferenciales{
+    width: 60%;
+}
+
+.fondoMisionVision{
+    background: #FFFFFF;
+}
+
+#misionVision{
+    font-size: 20px;
+}
+
+em strong{
+    color: red;
+}
