@@ -12,13 +12,13 @@
     <body>
         <header>
             <div class="caja">
-                <h1><img src="imagenes/logoBlack2.png"></h1>
+                <h1><img src="imagenes/logoBlack2.png" alt="Logo de ConverTic Shop"></h1>
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="productosConverTicShop.html">Tienda</a></li>
                         <li><a href="about.html">¿Quienes somos?</a></li>
-                        <li><a href="contacts">Contactos</a></li>
+                        <li><a href="contactoConverTicShop.html">Contactos</a></li>
                     </ul>
                 </nav>
             </div>
@@ -27,20 +27,45 @@
         <main>
             <form>
                 <label for="nombreApellido">Nombre y Apellido</label>
-                <input type="text" id="nombreApellido">
+                <input type="text" id="nombreApellido" class="inputPadron" required>
 
                 <label for="correoElectronico">Correo Electrónico</label>
-                <input type="text" id="correoElectronico">
+                <input type="text" id="correoElectronico" class="inputPadron" required placeholder="email@dominio.com">
 
                 <label for="telefono">Teléfono</label>
-                <input type="text" id="telefono">
+                <input type="text" id="telefono" class="inputPadron" required placeholder="(XXX) XXX XXXX">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" cols="70" rows="10" class="inputPadron" required></textarea>
+
+                <fieldset>
+                    <legend>¿Cómo le gustaría que lo contactemos?</legend>
+
+                    <label for="radioEmail"><input type="radio" name="contacto" value="emial" id="radioEmail">Email</label>
+                    
+                    <label for="radioTelefono"><input type="radio" name="contacto" value="telefono" id="radioTelefono">Teléfono</label>
+
+                    <label for="radioWhatsapp"><input type="radio" name="contacto" value="whatsapp" id="radioWhatsapp" checked>Whatsapp</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>¿Cómo fue su experiencia de compra en la página?</legend>
+                    <select>
+                        <option>Excelente</option>
+                        <option>Buena</option>
+                        <option>Regular</option>
+                        <option>Deficiente</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked>Le gustaría recibir novedades de ConverTic Shop</label> 
 
                 <input type="submit" value="Enviar formulario">
             </form>
         </main>
 
         <footer>
-            <img src="imagenes/logoWhiteTrans.png">
+            <img src="imagenes/logoWhiteTrans.png" alt="Logo de ConverTic Shop">
             <p class="copyright">&copy Copyright ConverTic - 2022</p>
         </footer>
     </body>
