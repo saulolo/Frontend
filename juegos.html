@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilosJuegos.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Cifrado</title>
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <h1><img src="imagenes/logoBlackTrans.png"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productosConverTicShop.html">Tienda</a></li>
+                    <li><a href="about.html">¿Quienes somos?</a></li>
+                    <li><a href="contactoConverTicShop.html">Contactos</a></li>
+                    <li><a href="juegos.html">Ludoteca</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="seccion_1">
+            
+            <textarea name="entrada" class="textarea" id="textoEncriptado" placeholder="Escribe tu texto aqui"></textarea>
+            <p class="info">🛈 solo letras minúsculas o mayúsculas sin caracteres especiales o acentos</p>
+            <div class="contenedor_botones">
+                <button type="button" class="boton_encriptar" id="botonEncriptado">Encriptar</button>
+                <button type="button" class="boton_desencriptar" id="botonDesencriptado">Desencriptar</button>  
+            </div>
+            
+        </section>   
+
+        <section class="seccion_2">
+            <div class="contenedor_imagen">
+                <img class="goku" src="Imagenes/goku1.gif" alt="Muñeco">
+            </div>
+            <div class="contenedor_subtitulo">
+                <textarea name="resultado" class="textarea" id="textoDesencriptado"></textarea>
+                
+                <button type="button" class="boton_copiar" id="botonCopiar">Copiar</button>
+            </div>
+            <div class="contenedor_parrafos">
+                <h3>--Texto Encriptado/Desencriptado--</h3>
+            </div>
+        </section>
+
+    </main>
+
+    
+    
+    
+    
+
+    <footer>
+        <img src="imagenes/logoWhiteTrans.png">
+        <p class="copyright">&copy Copyright ConverTic - 2022</p>
+    </footer>
+    
+</body>
+<script>
+    var btn = document.querySelector("#botonEncriptado");
+    btn.onclick = encriptar;
+    var btn2 = document.querySelector("#botonDesencriptado");
+    btn2.onclick = desencriptar;
+    var btn3 = document.querySelector("#botonCopiar");
+    btn3.onclick = copiar;
+</script>
+</html>

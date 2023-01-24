@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #d0a22d;
+}
+
+header {
+    background-color: white;
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+
+nav{
+    position: absolute;
+    top: 100px;
+    left: 30%;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #d0a22d;
+    text-decoration: underline;
+}
+
+header img{
+    margin-left: 20px;
+    padding: 5px;
+}
+
+main{
+    width: 100%;
+    height: 600px;
+    display: flex; /*Es para que las cajas hijas que contiene, en este caso las section_1 y section_2 se me comporten de manera organzada una a la lado de la otra y noi se me desplacen.*/
+    justify-content: space-between;
+}
+
+section{
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.seccion_1{
+    width: 60%;
+    margin-left: 20px;
+    box-shadow: 0px 0px 5px 1px black;
+}
+
+.info{
+    text-align: center;
+    color: gray;
+}
+
+.textarea{
+    width: 80%;
+    height: 60%;
+    resize: none; /*Quitar del cuadro la propiedad que podamos moverlo de la esquina inferior derecha.*/
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 25px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+}
+
+.contenedor_botones{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.boton_encriptar, .boton_desencriptar{
+    width: 30%;
+    height: 40px;
+    border-radius: 15px;
+}
+
+.boton_encriptar{
+    background-color: #d0a22d;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.boton_encriptar:hover, .boton_desencriptar:hover{
+    background-color: #e7edf7;
+    color: black;
+}
+
+.boton_desencriptar{
+    background-color: #d0a22d;
+    color: white;
+    font-size: 20px;
+    cursor: pointer; /*Para que cuando pase el cursor por el boton, me cambie a la manito*/
+}
+
+.seccion_2{
+    width: 30%;
+    margin-right: 20px;
+    box-shadow: 0px 0px 5px 1px black;
+}
+
+.contenedor_imagen{
+    width: 100%;
+    height: 60%;
+    padding-top: 20px; 
+    text-align: center;
+}
+
+.goku{
+    margin-top: 30px;
+    width: 350px;
+    height: 350px;
+    border: 0;
+
+}
+
+.contenedor_subtitulo{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.boton_copiar{
+    width: 30%;
+    height: 40px;
+    background-color: #d0a22d;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    
+
+}
+
+.boton_copiar:hover{
+    background-color: #e7edf7;
+    color: black;
+}
+
+.contenedor_subtitulo{
+    width: 100%;
+    height: 20%;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.contenedor_parrafos{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 20px;
+}
+
+h3{
+    color: gray;
+}
+
+footer{
+    width: 100%;
+    height: 60px;
+}
+
+footer{
+    font-size: 13px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box; /*Para que no desborde el elemento*/
+    padding: 40px;
+    margin-bottom: 14%;
+}
+
+#botonCopiar{
+    display: none;
+}
